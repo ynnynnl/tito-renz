@@ -1,0 +1,72 @@
+.footer {
+    color: #d9d9d9;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    padding: 10px 6vw; 
+    margin-top: 100px; 
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px; 
+    margin-top: 10px; 
+}
+
+/* Logo styles */
+.footer-content-left .logo {
+    width: 100px; 
+    height: auto; 
+}
+
+/* Flexbox layout for content sections */
+.footer-content-left,
+.footer-content-right,
+.footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Changed to flex-start for consistency */
+    gap: 10px; 
+}
+
+/* List styles */
+.footer-content-left li,
+.footer-content-right li,
+.footer-content-center li {
+    list-style: none;
+    margin-bottom: 5px; 
+    cursor: pointer;
+}
+
+/* Heading styles */
+.footer-content-right h2,
+.footer-content-center h2 {
+    color: white;
+    font-size: 18px; 
+    margin-top: 10px; 
+}
+
+/* Horizontal rule style */
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 15px 0; 
+    background-color: #29871c;
+    border: none;
+}
+
+/* Responsive styles */
+@media(max-width: 750px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright {
+        text-align: center;
+    }
+}

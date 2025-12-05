@@ -1,0 +1,45 @@
+.food-display {
+    margin-top: 30px;
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+    margin: 0 0 30px 135px; /* Updated margin for consistency */
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    margin: 0 150px; /* Simplified margins */
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.food-item-counter img {
+    width: 30px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+    .food-display h2 {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .food-display-list {
+        margin: 0 20px; /* Adjust margin for smaller screens */
+    }
+}

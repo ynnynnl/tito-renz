@@ -1,0 +1,86 @@
+.header {
+    height: 30vw;
+    width: 80%; 
+    margin: 27px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: cover; 
+    background-position: center 20%; /* Removed extra semicolon */
+    position: relative;
+    border-radius: 15px; 
+    overflow: hidden; 
+    background-color: transparent;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Changed to flex-start */
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 12%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(3.5vw, 22px);
+}
+
+.header-contents p {
+    color: white;
+    font-size: 1.5vw;
+}
+
+.header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 140px;
+    }
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right {
+        gap: 20px;
+    }
+    .navbar-right img {
+        width: 20px;
+    }
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+    .header-contents {
+        max-width: 65%;
+    }
+    .header-contents p {
+        display: none;
+    }
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
+}
